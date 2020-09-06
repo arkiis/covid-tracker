@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+/*-----------------------------------------------
+|   Theme Styles
+-----------------------------------------------*/
+// @import "../../../node_modules/bootstrap/scss/variables.scss";
+// @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "theme/variables";
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../../node_modules/bootstrap/scss/variables";
+
+@import "theme/theme";

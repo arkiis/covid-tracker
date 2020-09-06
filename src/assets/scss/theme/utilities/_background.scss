@@ -1,0 +1,55 @@
+/*-----------------------------------------------
+|   Backgrounds
+-----------------------------------------------*/
+
+.bg-holder {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  will-change: transform, opacity, filter;
+  backface-visibility: hidden;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+/*-----------------------------------------------
+|   Background gradient
+-----------------------------------------------*/
+.bg-gradient {
+  background-image: linear-gradient(-45deg, #014ba7, #0183d0);
+  background-position: center;
+}
+
+.bg-card-gradient {
+  background-image: linear-gradient(-45deg, #1970e2, #4695ff);
+  background-position: center;
+}
+
+/*-----------------------------------------------
+|   Background border
+-----------------------------------------------*/
+.rounded-soft {
+  border-radius: 5px !important;
+}
+
+/*-----------------------------------------------
+|   Background Colors [Brands]
+-----------------------------------------------*/
+.bg-card {
+  background-size: contain;
+  background-position: right;
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+
+  [dir="rtl"] & {
+    background-position: left;
+    transform: scaleX(-1);
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+  }
+}

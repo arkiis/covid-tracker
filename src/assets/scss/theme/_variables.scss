@@ -1,0 +1,160 @@
+//*-----------------------------------------------
+//|   Spacing
+//-----------------------------------------------*/
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  $spacers,
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25,
+    ),
+    2: (
+      $spacer * 0.5,
+    ),
+    3: $spacer,
+    4: (
+      $spacer * 1.8,
+    ),
+    5: (
+      $spacer * 3,
+    ),
+    6: (
+      $spacer * 4,
+    ),
+    7: (
+      $spacer * 5,
+    ),
+    8: (
+      $spacer * 7.5,
+    ),
+    9: (
+      $spacer * 10,
+    ),
+    10: (
+      $spacer * 12.5,
+    ),
+    11: (
+      $spacer * 15,
+    ),
+  )
+);
+//*-----------------------------------------------
+//|   Color System
+//-----------------------------------------------*/
+$white: #fff !default;
+$gray-100: #f9fafd !default;
+$gray-200: #edf2f9 !default;
+$gray-300: #d8e2ef !default;
+$gray-400: #b6c1d2 !default;
+$gray-500: #9da9bb !default;
+$gray-600: #748194 !default;
+$gray-700: #5e6e82 !default;
+$gray-800: #4d5969 !default;
+$gray-900: #344050 !default;
+$gray-1000: #232e3c !default;
+$gray-1100: #0b1727 !default;
+$black: #000 !default;
+
+$grays: () !default;
+$grays: map_merge(
+  $grays,
+  (
+    "black": $black,
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900,
+    "1000": $gray-1000,
+    "1100": $gray-1100,
+    "white": $white,
+  )
+);
+//*-----------------------------------------------
+//|   Solid Colors
+//-----------------------------------------------*/
+$blue: #2c7be5 !default;
+$indigo: #727cf5 !default;
+$purple: #6b5eae !default;
+$pink: #ff679b !default;
+$red: #e63757 !default;
+$orange: #fd7e14 !default;
+$yellow: #f5803e !default;
+$green: #00d27a !default;
+$teal: #02a8b5 !default;
+$cyan: #27bcfd !default;
+
+//*-----------------------------------------------
+//|   Theme Colors
+//-----------------------------------------------*/
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-1100 !default;
+
+$theme-colors: () !default;
+$theme-colors: map_merge(
+  $theme-colors,
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+  )
+);
+
+//*-----------------------------------------------
+//|   Fonts Families
+//-----------------------------------------------*/
+$font-family-sans-serif: "Poppins", -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-monospace: "SFMono-Regular", Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+//*-----------------------------------------------
+//|   Fonts
+//-----------------------------------------------*/
+$type-scale: 1.2;
+$font-size-base: 1rem !default;
+$font-sizes: () !default;
+// $font-sizes: (
+//   "-2": 1 / pow($type-scale, 2) * $font-size-base,
+//   "-1": 1 / $type-scale * $font-size-base,
+//   0: $font-size-base,
+//   1: pow($type-scale, 1) * $font-size-base,
+//   2: pow($type-scale, 2) * $font-size-base,
+//   3: pow($type-scale, 3) * $font-size-base,
+//   4: pow($type-scale, 4) * $font-size-base,
+//   5: pow($type-scale, 5) * $font-size-base,
+//   6: pow($type-scale, 6) * $font-size-base,
+//   7: pow($type-scale, 7) * $font-size-base,
+//   8: pow($type-scale, 8) * $font-size-base,
+// );
+$font-weight-thin: 100 !default;
+$font-weight-extra-light: 200 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semi-bold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-extra-bold: 800 !default;
+$font-weight-black: 900 !default;
